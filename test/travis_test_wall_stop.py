@@ -7,7 +7,7 @@ class WallStopTest(unittest.TestCase):
     def set_and_get(self, lf, ls, rs, rf):
 	with open("/dev/rtlightsensor0", "w") as f:
 	    #f.write("%d %d %d %d\n", % (rf, rs, ls, lf))
-	    f.write("{0} {1} {2} {3}", format(rf, rs, ls, lf))
+	    f.write("{0} {1} {2} {3}".format(rf, rs, ls, lf))
 
 	time.sleep(0.3)
 
